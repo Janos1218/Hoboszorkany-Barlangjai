@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>171. Fejezet - A Hóboszorkány Barlangja</title>
+    <link rel="stylesheet" href="style3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="Scriptek.js"></script>
+  </head>
+  <body>
+    <div class="dice-container">
+      <div class="dice-title">Kockadobás</div>
+      <div class="dice-buttons">
+        <button class="dice-button" onclick="rollDice(1)">1 kockával</button>
+        <button class="dice-button" onclick="rollDice(2)">2 kockával</button>
+      </div>
+      <div class="dice-results">
+        <div class="dice-image" id="dice1">-</div>
+        <div class="dice-image" id="dice2" style="display: none">-</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>171. Fejezet</h1>
+      <div class="story-image-container">
+        <img src="Images/kincs.avif" alt="Kincs" class="story-image" />
+      </div>
+      <p>
+        A Hóboszorkány kincstárnoka halott, és így szabadon rendelkezhetsz a
+        boszorkány vagyonával, bár az egészet képtelen vagy elvinni.
+        Elhatározod, hogy megtöltöd a hátizsákodat arannyal - 600 Aranytallért
+        találsz.
+      </p>
+      <p>
+        Éppen befejezed a rámolást, amikor lépéseket hallasz; valaki futva
+        közeledik a csarnok felé. Felállsz, kihúzod a kardodat, és nem vagy
+        benne biztos, vajon túlélsz-e egy újabb kemény harcot. Két alak jelenik
+        meg az ajtóban: egy Törpe és egy Elf, de nem úgy néznek ki, mint akik
+        meg akarnának támadni. Mindkettőjüknek széles vigyor ül az arcán, és
+        mindketten egyszerre kezdenek el beszélni hozzád. Végül is az Elf
+        lecsöndesíti a társát, és így szól: - Elpusztítottad! Szabadok vagyunk!
+        Végre levehetjük az engedelmesség nyakláncát! Szeretnénk viszonozni
+        valamivel jótettedet, ezért segítünk neked kijutni innen. Arra ugyanis,
+        amerről jöttél, nem mehetsz ki, mert a Hóboszorkány hű csatlósai lesben
+        állnak, hogy kifelé menet megöljenek. Különben is az alagutak csak úgy
+        hemzsegnek a Goblinoktól. Elf és Törpe barátaink éppen velük csatáznak,
+        hogy legyen időd a meneküléstre - siess hát!
+      </p>
+      <p>
+        - Legnagyobb meglepetésedre az Elf elindul az ajtóval szemközti fal
+        felé, és átsétál rajta. - Ez is a Hóboszorkány egyik varázslata - jegyzi
+        meg a Törpe. - Egy menekülési lehetőség, amit ő már sohasem fog
+        használni. A baj csak az, hogy még mi sem jártunk erre. - A Törpe jót
+        nevet magában, és elindul a fal felé, te pedig a nyomában.
+      </p>
+      <a href="Befejezes.html" class="chapter-link">Tovább</a>
+    </div>
+
+    <!-- Karakterlap gomb -->
+    <button class="toggle-sheet-btn" onclick="toggleCharacterSheet()">
+      Karakterlap
+    </button>
+
+    <!-- Karakterlap konténer -->
+    <div class="character-sheet" id="characterSheet">
+      <div class="character-sheet-title">Kalandlap</div>
+
+      <div class="stats-container">
+        <div class="stat-item">
+          <label class="stat-label">Ügyesség</label>
+          <input type="number" class="stat-input" id="skill" min="0" max="12" />
+        </div>
+        <div class="stat-item">
+          <label class="stat-label">Életerő</label>
+          <input
+            type="number"
+            class="stat-input"
+            id="stamina"
+            min="0"
+            max="24"
+          />
+        </div>
+        <div class="stat-item">
+          <label class="stat-label">Szerencse</label>
+          <input type="number" class="stat-input" id="luck" min="0" max="12" />
+        </div>
+      </div>
+
+      <div class="equipment-container">
+        <div class="equipment-category">
+          <div class="equipment-title">Felszerelés</div>
+          <div id="equipment-list">
+            <!-- Dinamikusan generált tárgyak -->
+          </div>
+          <div class="add-item">
+            <input
+              type="text"
+              id="new-equipment"
+              placeholder="Új tárgy hozzáadása"
+            />
+            <button onclick="addEquipment()">+</button>
+          </div>
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Arany</div>
+          <input type="number" class="equipment-input" id="gold" min="0" />
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Ékkövek</div>
+          <input type="number" class="equipment-input" id="gems" min="0" />
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Italok</div>
+          <div id="potions-list">
+            <!-- Dinamikusan generált italok -->
+          </div>
+          <div class="add-item">
+            <input
+              type="text"
+              id="new-potion"
+              placeholder="Új ital hozzáadása"
+            />
+            <button onclick="addPotion()">+</button>
+          </div>
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Élelmiszer (10)</div>
+          <input
+            type="number"
+            class="equipment-input"
+            id="food"
+            min="0"
+            max="10"
+          />
+        </div>
+      </div>
+    </div>
+    <button class="navigation-btn" onclick="location.href='Bevezetes.html'">
+      Vissza a Bevezetéshez
+    </button>
+  </body>
+</html>

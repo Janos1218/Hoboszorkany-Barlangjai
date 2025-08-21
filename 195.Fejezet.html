@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>195. Fejezet - A Hóboszorkány Barlangja</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="Scriptek.js"></script>
+  </head>
+  <body>
+    <div class="dice-container">
+      <div class="dice-title">Kockadobás</div>
+      <div class="dice-buttons">
+        <button class="dice-button" onclick="rollDice(1)">1 kockával</button>
+        <button class="dice-button" onclick="rollDice(2)">2 kockával</button>
+      </div>
+      <div class="dice-results">
+        <div class="dice-image" id="dice1">-</div>
+        <div class="dice-image" id="dice2" style="display: none">-</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>195. Fejezet</h1>
+      <div class="story-image-container">
+        <img src="Images/Yeti.jpg" alt="Yeti" class="story-image" />
+        <div class="image-caption">
+          <p>Yeti</p>
+          <p><strong>ÜGYESSÉG: 11</strong></p>
+          <p><strong>ÉLETERŐ: 12</strong></p>
+        </div>
+      </div>
+      <p>
+        Kezed teljesen elgémberedett, és iszonyatosan sajog a fájdalomtól, így
+        aztán képtelen vagy megfogni a lándzsát. Szitkozódva belehajítod a hóba,
+        a másik kezeddel pedig előrántod a kardodat, hogy azzal küzdj meg a
+        hatalmas fehér vadállattal.
+      </p>
+      <p>Ha legyőzted a Yetit, lapozz a 67. Fejezetre.</p>
+      <div id="combatControls">
+        <button id="startCombatBtn" class="combat-button">
+          Kezdd el a harcot!
+        </button>
+      </div>
+
+      <div id="combatLog" style="display: none">
+        <h2>Harc menete</h2>
+        <div id="combatRoundInfo"></div>
+        <div id="combatActions">
+          <button id="nextRoundBtn" class="combat-button" style="display: none">
+            Következő kör
+          </button>
+          <button
+            id="luckTestBtn"
+            class="luck-test-button"
+            style="display: none"
+            onclick="testCombatLuck()"
+          >
+            Tedd próbára a SZERENCSÉDET!
+          </button>
+        </div>
+      </div>
+
+      <div id="combatResult" style="display: none">
+        <h2>Harc eredménye</h2>
+        <p id="resultText"></p>
+      </div>
+      <a href="67.Fejezet.html" class="disabled-link">67. Fejezet</a>
+    </div>
+
+    <!-- Karakterlap gomb -->
+    <button class="toggle-sheet-btn" onclick="toggleCharacterSheet()">
+      Karakterlap
+    </button>
+
+    <!-- Karakterlap konténer -->
+    <div class="character-sheet" id="characterSheet">
+      <div class="character-sheet-title">Kalandlap</div>
+
+      <div class="stats-container">
+        <div class="stat-item">
+          <label class="stat-label">Ügyesség</label>
+          <input type="number" class="stat-input" id="skill" min="0" max="12" />
+        </div>
+        <div class="stat-item">
+          <label class="stat-label">Életerő</label>
+          <input
+            type="number"
+            class="stat-input"
+            id="stamina"
+            min="0"
+            max="24"
+          />
+        </div>
+        <div class="stat-item">
+          <label class="stat-label">Szerencse</label>
+          <input type="number" class="stat-input" id="luck" min="0" max="12" />
+        </div>
+      </div>
+
+      <div class="equipment-container">
+        <div class="equipment-category">
+          <div class="equipment-title">Felszerelés</div>
+          <div id="equipment-list">
+            <!-- Dinamikusan generált tárgyak -->
+          </div>
+          <div class="add-item">
+            <input
+              type="text"
+              id="new-equipment"
+              placeholder="Új tárgy hozzáadása"
+            />
+            <button onclick="addEquipment()">+</button>
+          </div>
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Arany</div>
+          <input type="number" class="equipment-input" id="gold" min="0" />
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Ékkövek</div>
+          <input type="number" class="equipment-input" id="gems" min="0" />
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Italok</div>
+          <div id="potions-list">
+            <!-- Dinamikusan generált italok -->
+          </div>
+          <div class="add-item">
+            <input
+              type="text"
+              id="new-potion"
+              placeholder="Új ital hozzáadása"
+            />
+            <button onclick="addPotion()">+</button>
+          </div>
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Élelmiszer (10)</div>
+          <input
+            type="number"
+            class="equipment-input"
+            id="food"
+            min="0"
+            max="10"
+          />
+        </div>
+      </div>
+    </div>
+    <button class="navigation-btn" onclick="location.href='Bevezetes.html'">
+      Vissza a Bevezetéshez
+    </button>
+  </body>
+</html>
