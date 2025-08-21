@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bevezetés</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="Scriptek.js"></script>
+  </head>
+  <body>
+    <div class="dice-container">
+      <div class="dice-title">Kockadobás</div>
+      <div class="dice-buttons">
+        <button class="dice-button" onclick="rollDice(1)">1 kockával</button>
+        <button class="dice-button" onclick="rollDice(2)">2 kockával</button>
+      </div>
+      <div class="dice-results">
+        <div class="dice-image" id="dice1">-</div>
+        <div class="dice-image" id="dice2" style="display: none">-</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Bevezetés</h1>
+      <p>
+        Ennek a könyvnek te vagy hőse. Te vívsz meg a kocka segítségével az
+        óriásokkal és a szörnyekkel, magad döntesz, hogy merre haladj tovább,
+        kivel barátkozz és kivel csatázz. Nem pusztán az író fantáziája
+        irányítja a történetet, hanem a te bátorságod, kíváncsiságod,
+        leleményességed, kalandvágyad és józan eszed is. Játék és regény
+        egyszerre, amit a kezedben tartasz. Kalandos vállalkozás, amelybe bele
+        is lehet bukni, de ha jól döntesz, sikerrel jársz.
+      </p>
+      <p>
+        Így hát ezt a könyvet ne úgy olvasd, ahogy egyébként olvasni szoktál.
+        Mint látod, itt még az oldalak sincsenek megszámozva a bevezető után,
+        hanem a hosszabb-rövidebb bekezdések viselnek számokat egytől
+        négyszázig. Ezek között előre-hátra lapozva haladsz előre a történetben
+        a saját igényeid szerint. Ha kardot rántasz az ellenségre, máshová
+        lapozol, mintha elbújnál előle.
+      </p>
+      <p>
+        Barbár harcosok, varázslók, szörnyetegek, törpék népesítik be ezt a
+        fantasztikus világot. Mi kell ahhoz, hogy ne bukj el közöttük? Csak az,
+        ami a mindennapi élethez is: ügyesség, jártasság, ötletesség; az, hogy
+        felkészülten várd a nehézségeket. És Szerencse, amely nélkül az előző
+        három talán mit sem ér, de ha csak erre számítasz, biztosan cserbenhagy.
+      </p>
+      <p>
+        Hogy mit jelent az <strong>ÜGYESSÉG</strong>,
+        <strong>ÉLETERŐ</strong> és <strong>SZERENCSE</strong> ebben a könyvben,
+        megtudod a következőkből. Ha netán nem lenne teljesen világos a dolog,
+        ne törődj vele; bátran előre! Vágj neki az olvasásnak, menet közben
+        minden a helyére kerül! De ha elfelejtenéd, hogyan kell jól megvívni egy
+        csatát, hogyan menekülhetsz, hogyan gyógyíthatod magad a játék szabályai
+        szerint, nyugodtan visszalapozhatsz.
+      </p>
+      <h2>Harc a szörnyekkel</h2>
+      <p>
+        Mielőtt belevágnál ebbe a kalandba, fel kell mérned, mennyire vagy erős,
+        illetve gyenge. Van kardod és pajzsod az útra, meg egy hátizsákod
+        étellel-italial. Felkészültél a feladatra, megtanultál a karddal bánni,
+        és keményen edzettél, hogy erős légy. Dobókockával döntsd el kezdő
+        <strong>ÜGYESSÉG</strong> és <strong>ÉLETERŐ</strong> pontjaidat, hogy
+        megtudd, milyen hatékonyak voltak előkészületeid.
+      </p>
+      <h2>ÜGYESSÉG, ÉLETERŐ ÉS SZERENCSE</h2>
+      <p>
+        Dobj az egyik kockával. Adj 6-ot a dobott számhoz, és az összeget írd be
+        a Karakterlap <strong>ÜGYESSÉG</strong> négyzetébe.
+      </p>
+      <p>
+        Dobj mindkét kockával, az eredményhez adjál 12-t, a kapott számot írd be
+        az <strong>ÉLETERŐ</strong> négyzetbe. Van egy
+        <strong>SZERENCSE</strong> rovat is. Ehhez egy kockával dobj, és 6-ot
+        adj az eredményhez, majd az összeget írd be a <strong>SZERENCSE</strong>
+        négyzetbe.
+      </p>
+      <p>
+        Különböző okok miatt, melyeket majd részletesen elmagyarázunk,
+        <strong>ÜGYESSÉG</strong>, <strong>ÉLETERŐ</strong> és
+        <strong>SZERENCSE</strong> pontjaid a kalandok során folyamatosan
+        változnak. Pontosan kell vezetned őket, soha ne töröld ki a
+        kezdőpontjaidat, mert szerezhetsz ugyan további
+        <strong>ÜGYESSÉG</strong>, <strong>ÉLETERŐ</strong> és
+        <strong>SZERENCSE</strong> pontokat, de összegük soha nem lépheti túl a
+        kezdeti értéket, kivéve néhány nagyon ritka alkalmat, amikor a megfelelő
+        oldalon ezt az utasítást kapod.
+      </p>
+      <p>
+        <strong>ÜGYESSÉG</strong> pontjaid kardvívó tudásodat és általános
+        harckészségedet mutatják. Nem árt minél több ilyen pontra szert tenni.
+        Az <strong>ÉLETERŐ</strong> pontok jelzik kondíciódat, az akaraterődet,
+        hogy túlélj egyegy helyzetet, továbbá eltökéltségedet és
+        állóképességedet; minél magasabb az <strong>ÉLETERŐ</strong> pontszám,
+        annál hosszabb ideig maradhatsz életben. A
+        <strong>SZERENCSE</strong> pontok mutatják, mennyire vagy szerencsés
+        ember. A szerencse és a varázslat az úr abban a fantasztikus
+        birodalomban, amelybe most behatolsz.
+      </p>
+      <h2>A CSATA</h2>
+      <p>
+        Sűrűn találsz majd olyan oldalakat, ahol azt az utasítást kapod, hogy
+        küzdj meg valamilyen teremtménnyel. Lehet, hogy lesz választási
+        lehetőséged; ha mégsem, vagy ha úgy döntesz, hogy vállalod a harcot, azt
+        a következő módon kell megvívni: Először is jegyezd fel a teremtmény
+        <strong>ÜGYESSÉGÉT</strong> és <strong>ÉLETEREJÉT</strong>. A
+        teremtmények pontszámait minden alkalommal megadja a könyv, amikor
+        összecsapsz valamelyikükkel.
+      </p>
+      <h3>A harc menete</h3>
+      <p>
+        1. Dobj két dobókockával a teremtmény nevében. A kapott számot add az Ő
+        <strong>ÜGYESSÉG</strong> pontjaihoz. Az összeg az Ő
+        <strong>TÁMADÓEREJE</strong>.
+      </p>
+      <p>
+        2. Dobj két kockával a magad nevében, és add az eredményt saját
+        jelenlegi <strong>ÜGYESSÉG</strong> pontjaidhoz. Ez a te
+        <strong>TÁMADÓERŐD</strong>.
+      </p>
+      <p>
+        3. Ha a te <strong>TÁMADÓERŐD</strong> nagyobb, mint a teremtményé,
+        akivel küzdesz, megsebezted. Menj tovább a 4. lépésre. Ha a teremtmény
+        <strong>TÁMADÓEREJE</strong>
+        nagyobb, ő sebzett meg téged, tehát haladj az 5. lépésre. Ha a két
+        <strong>TÁMADÓERŐ</strong> egyforma, kivédtétek egymás csapását, és a
+        következő Fordulót az 1. lépéstől elölről kezdheted.
+      </p>
+      <p>
+        4. Megsebezted a teremtményt, ezért vonj le 2 pontot az
+        <strong>ÉLETEREJÉBŐL</strong>. Felhasználhatod a
+        <strong>SZERENCSÉDET</strong> is, hogy további sebeket ejts rajta (lásd
+        később).
+      </p>
+      <p>
+        5. A teremtmény sebzett meg téged, ezért vonj le 2 pontot saját
+        <strong>ÉLETERŐDBŐL</strong>. De ilyenkor is lehet
+        <strong>SZERENCSÉD</strong> (lásd később).
+      </p>
+      <p>
+        6. Ellenőrizd a teremtmény ÉLETERŐ pontjait vagy a saját pontjaidat, és
+        a <strong>SZERENCSE</strong> pontokat is, ha a
+        <strong>SZERENCSÉHEZ</strong> folyamodtál (lásd később).
+      </p>
+      <p>
+        7. Kezdd el a következő Fordulót meglévő
+        <strong>ÜGYESSÉG</strong> pontjaid alapján, és ismételd meg a lépéseket
+        1-től 6-ig. Addig játszhatsz, amíg vagy a te
+        <strong>ÉLETERŐ</strong> pontjaid vagy a teremtmény pontjai el nem
+        fogynak (halál).
+      </p>
+      <p>
+        Ezt a folyamatot a könyv online verziójában automatizáltuk, az
+        egyszerűség kedvéért.
+      </p>
+      <h2>SZERENCSE</h2>
+      <p>
+        Kalandjaid során, akár csatában, akár olyan helyzetekben, amikor a
+        <strong>SZERENCSE</strong> dönthet sorsod felől (az erre vonatkozó
+        utasítást az adott fejezetpontok alatt megkapod), a
+        <strong>SZERENCSÉDRE</strong> is számíthatsz, hogy az események
+        kimenetele számodra kedvező legyen. De vigyázz! A
+        <strong>SZERENCSÉRE</strong>
+        számítani kockázatos, és ha balszerencsés vagy, az eredmény végzetes
+        lehet.
+      </p>
+      <p>
+        <strong>SZERENCSÉDET</strong> a következő módon teheted próbára. Dobj
+        mindkét kockával. Ha a kapott szám ugyyanannyi vagy kevesebb, mint
+        jelenlegi <strong>SZERENCSE</strong> pontszámod, az eredmény kedvező. Ha
+        magasabb számot dobsz, mint a jelenlegi
+        <strong>SZERENCSE</strong> pontszámod, balszerencséd volt, és vállald a
+        következményeit.
+      </p>
+      <h3>A SZERENCSE használata csatában</h3>
+      <p>
+        A könyv bizonyos oldalain felszólítunk, hogy Tedd próbára
+        <strong>SZERENCSÉDET</strong>!, és közöljük, hogy
+        <strong>SZERENCSÉD</strong> volt-e vagy sem. A csatákban viszont mindig
+        te döntesz, hogy a <strong>SZERENCSÉD</strong> segítségével
+        megpróbálsz-e komolyabb sebet ejteni azon a teremtményen, amelyet éppen
+        megsebeztél, vagy csökkenteni próbálod-e annak a sebnek a hatását,
+        amelyet a teremtménytől elszenvedtél.
+      </p>
+      <p>
+        Ha te sebezted meg a teremtményt, a fent leírt módon Tedd próbára a
+        <strong>SZERENCSÉDET</strong>! Ha szerencsés vagy, komoly sebet ejtettél
+        rajta, és 2 külön pontot levonhatsz a teremtmény
+        <strong>ÉLETERŐJÉBŐL</strong>. Azonban, ha balszerencse ért vagy a seb
+        puszta karcolás, az 1 pontot vissza kell adnod ellenfeled
+        <strong>ÉLETERŐ pontjaihoz</strong>. (Tehát: a szabályos 2 pont levonás
+        helyett most csak 1 pontot vonhatsz le tőle.)
+      </p>
+      <p>
+        Ha a teremtmény sebzett meg téged, azért Tedd próbára a
+        <strong>SZERENCSÉDET</strong>!, hogy enyhítsd a sebet. Ha
+        <strong>SZERENCSÉD</strong> van, sikerült elkerülnöd a teljes csapást. 1
+        pontot visszaadsz magadnak (2 pontos kár helyett csak 1 pontos kár
+        keletkezett az <strong>ÉLETERŐDBEN</strong>). Ha nem voltál szerencsés,
+        komolyabb találat ért, plusz 1 ÉLETERŐ pontot vonj le magadtól.
+      </p>
+      <p>
+        Ne feledd, hogy minden alkalommal le kell vonnod 1 pontot adott
+        <strong>SZERENCSE</strong> pontszámodból, ahányszor Próbára teszed a
+        SZERENCSÉDET!
+      </p>
+      <h2>
+        AZ ÜGYESSÉG, ÉLETERŐ ÉS A SZERENCSE VISSZAÁLLÍTÁSA A KEZDETI ÉRTÉKRE
+      </h2>
+      <h3>ÜGYESSÉG</h3>
+      <p>
+        <strong>ÜGYESSÉG</strong> pontjaid nem sokat fognak változni kalandjaid
+        során. Helyenként, egy-egy oldalon olyan utasítást találsz, hogy növeld
+        vagy csökkentsd <strong>ÜGYESSÉG</strong> pontjaid számát. Egy
+        csodafegyver növelheti <strong>ÜGYESSÉGEDET</strong>, de ne feledd, hogy
+        egyszerre csak egy fegyvert használhatsz. Nem tarthatsz igényt 2
+        <strong>ÜGYESSÉG</strong> jutalompontra, mert két varázskardod van.
+        <strong>ÜGYESSÉG</strong> pontjaid száma soha nem lépheti túl az eredeti
+        értékét, hacsak külön utasítást nem kapsz rá. Ha iszol az
+        <strong>ÜGYESSÉG Italából</strong> (lásd később), bármikor a kezdeti
+        értékére áll vissza <strong>ÜGYESSÉGED</strong>.
+      </p>
+      <h3>ÉLETERŐ és ÉLELMISZER</h3>
+      <p>
+        <strong>ÉLETERŐ</strong> pontjaid sokszor fognak változni kalandjaid
+        során, amint megküzdesz a szörnyekkel és lelkesítő feladatokat vállalsz.
+        Ahogy célodhoz közeledsz, <strong>ÉLETERŐ</strong> pontjaid száma
+        veszélyesen csökkenhet, és a csaták különösen kockázatossá válnak, ezért
+        légy óvatos!
+      </p>
+      <p>
+        Hátizsákodban tíz étkezésre elegendő élelmiszer van. Bármikor
+        megállhatsz pihenni és enni, kivéve ott, ahol erre más utasítást kapsz.
+        Minden étkezés 4 pontot ad <strong>ÉLETERŐ</strong> pontjaidhoz, és 1
+        ponttal csökkenti Élelmiszer-tartalékodat. A Kalandlapon külön
+        Élelmiszerkészlet rovat van, hogy feljegyezd, mennyit fogyasztottál. Ne
+        feledd, hogy hosszú utat kell megtenned, ezért bölcsen használd fel
+        Élelmiszerkészletedet!
+      </p>
+      <p>
+        Azt se feledd, hogy <strong>ÉLETERŐ</strong> pontjaid száma soha sem
+        lépheti túl a kezdeti értéket, kivéve, ha egy adott oldalon ezt az
+        utasítást kaptad. Ha megiszod az <strong>ERŐ italát</strong> (lásd
+        később), bármikor eredeti szintjére állíthatod
+        <strong>ÉLETERŐDET</strong>.
+      </p>
+      <h3>SZERENCSE</h3>
+      <p>
+        <strong>SZERENCSE</strong> pontjaidhoz továbbiakat szerezhetsz
+        kalandjaid során, ha kivételesen <strong>SZERENCSÉS</strong> vagy. Ennek
+        részleteit megtalálod a könyvben. Ne feledd, hogy az
+        <strong>ÜGYESSÉGHEZ</strong> és az <strong>ÉLETERŐHÖZ</strong> hasonlóan
+        <strong>SZERENCSE</strong>
+        pontjaid sem léphetik túl kezdeti értéküket, kivéve, ha egy-egy oldalon
+        ezt az utasítást kapod. A <strong>SZERENCSE Italát</strong> felhörpintve
+        (lásd később) bármikor kezdeti értékére állíthatod vissza
+        <strong>SZERENCSÉDET</strong>, és 1 ponttal növelheted kezdeti
+        <strong>SZERENCSÉDET</strong>.
+      </p>
+      <h3>FELSZERELÉS ÉS ITALOK</h3>
+      <p>
+        Minimális felszereléssel kezded kalandodat, de utad során találhatsz
+        vagy beszerezhetsz ezt-azt. Karddal vagy felfegyverezve, és bőrpáncélt
+        viselsz. Hátizsákodban étel, ital lapul, és azok a kincsek, amelyeket
+        megszerzel. Lámpásod is van, amely megvilágítja az utadat.
+      </p>
+      <p>
+        Emellett magaddal vihetsz egy palackkal a Varázsitalból; ez segít rajtad
+        a kutatás során. A következő palackok bármelyikét választhatod:
+      </p>
+      <p>
+        Az <strong>ÜGYESSÉG ITALA</strong> - kezdeti értékére állítja vissza
+        ÜGYESSÉG pontjaidat.
+      </p>
+      <p>
+        Az <strong>ERŐ ITALA</strong> - kezdeti értékére állítja vissza ÉLETERŐ
+        pontjaidat.
+      </p>
+      <p>
+        A <strong>SZERENCSE ITALA</strong> - kezdeti értékére állítja vissza
+        SZERENCSE pontjaidat, és 1 ponttal növeli kezdeti SZERENCSÉDET.
+      </p>
+      <p>
+        Kalandjaid során bármikor kortyolhatsz a magaddal vitt italból (kivéve,
+        amikor harcban állsz). Ezeknek az italoknak egy adagja visszaállítja
+        <strong>ÜGYESSÉGED</strong>, <strong>ÉLETERŐD</strong> vagy
+        <strong>SZERENCSÉD</strong> kezdeti értékét (és a
+        <strong>SZERENCSE ITALA</strong>
+        1 ponttal növeli kezdeti SZERENCSÉDET).
+      </p>
+      <p>
+        Minden palack két adag varázsitalt tartalmaz, tehát kétszer élhetsz vele
+        kalandjaid során. Jegyezd fel a Kalandlapon, ha elhasználtad.
+      </p>
+      <p>
+        Azt se feledd, hogy a háromféle ital közül csak az egyiket viheted
+        magaddal az útra, válassz hát bölcsen!
+      </p>
+      <h2>TANÁCSOK A JÁTÉKHOZ</h2>
+      <p>
+        Utad veszélyes lesz, és előfordulhat, hogy első próbálkozásra belebuksz.
+        Jegyzetelj, s készíts térképet utad során, ez felbecsülhetetlen értékű
+        lesz az elkövetkező kalandjaidban, és segít, hogy gyorsan keresztüljuss
+        a felderítetlen részeken.
+      </p>
+      <p>
+        Nem találsz mindenütt kincseket. Sokszor csupán csapdák vagy olyan
+        lények várnak rád, melyekkel összeütközésbe kerülsz.
+      </p>
+      <p>
+        Gyakran fogsz rossz irányba menni, de végül is majd megtalálod azt, amit
+        keresel.
+      </p>
+      <p>
+        Az egyetlen igazi út minimális kockázatot jelent, és minden játékos,
+        függetlenül attól, milyen pontokkal is vág neki, elég könnyen végigmehet
+        rajta.
+      </p>
+      <p>
+        Érdemes egy lapra leírnod a karaktered maximális értékeit, mivel a játék
+        nem jegyzi fel a játékosnak ezeket, ezért túllépheti őket.
+      </p>
+      <p>
+        A játék automatikusan elmenti a Karakterlapon történt változásokat, így
+        a játékos a weboldal bezárása után is megtarja a karakterlapját, bár a
+        haladása elveszik ilyenkor.
+      </p>
+      <p>
+        Hogyha ehhez az oldalhoz használod a "Vissza a bevezetéshez" gombot
+        akkor a böngésző "Vissza nyilával" tudsz majd visszamenni, ahol
+        abbahagytad utazásod.
+      </p>
+      <p>
+        Kérlek tisztességgel és becsülettel haladj végig a történeten, bár ha
+        könnyíteni szeretnéd a haladásodat, azt is megteheted.
+      </p>
+      <p><strong>Kísérjen szerencse kalandjaid során! Sok sikert!</strong></p>
+      <a href="Háttértört.html">Tovább a történetre</a>
+    </div>
+    <!-- Karakterlap gomb -->
+    <button class="toggle-sheet-btn" onclick="toggleCharacterSheet()">
+      Karakterlap
+    </button>
+
+    <!-- Karakterlap konténer -->
+    <div class="character-sheet" id="characterSheet">
+      <div class="character-sheet-title">Kalandlap</div>
+
+      <div class="stats-container">
+        <div class="stat-item">
+          <label class="stat-label">Ügyesség</label>
+          <input type="number" class="stat-input" id="skill" min="0" max="12" />
+        </div>
+        <div class="stat-item">
+          <label class="stat-label">Életerő</label>
+          <input
+            type="number"
+            class="stat-input"
+            id="stamina"
+            min="0"
+            max="24"
+          />
+        </div>
+        <div class="stat-item">
+          <label class="stat-label">Szerencse</label>
+          <input type="number" class="stat-input" id="luck" min="0" max="12" />
+        </div>
+      </div>
+
+      <div class="equipment-container">
+        <div class="equipment-category">
+          <div class="equipment-title">Felszerelés</div>
+          <div id="equipment-list">
+            <!-- Dinamikusan generált tárgyak -->
+          </div>
+          <div class="add-item">
+            <input
+              type="text"
+              id="new-equipment"
+              placeholder="Új tárgy hozzáadása"
+            />
+            <button onclick="addEquipment()">+</button>
+          </div>
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Arany</div>
+          <input type="number" class="equipment-input" id="gold" min="0" />
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Ékkövek</div>
+          <input type="number" class="equipment-input" id="gems" min="0" />
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Italok</div>
+          <div id="potions-list">
+            <!-- Dinamikusan generált italok -->
+          </div>
+          <div class="add-item">
+            <input
+              type="text"
+              id="new-potion"
+              placeholder="Új ital hozzáadása"
+            />
+            <button onclick="addPotion()">+</button>
+          </div>
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Élelmiszer (10)</div>
+          <input
+            type="number"
+            class="equipment-input"
+            id="food"
+            min="0"
+            max="10"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

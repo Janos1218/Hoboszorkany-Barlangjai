@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Háttértörténet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="Scriptek.js"></script>
+  </head>
+  <body>
+    <div class="dice-container">
+      <div class="dice-title">Kockadobás</div>
+      <div class="dice-buttons">
+        <button class="dice-button" onclick="rollDice(1)">1 kockával</button>
+        <button class="dice-button" onclick="rollDice(2)">2 kockával</button>
+      </div>
+      <div class="dice-results">
+        <div class="dice-image" id="dice1">-</div>
+        <div class="dice-image" id="dice2" style="display: none">-</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Háttértörténet</h1>
+      <div class="story-image-container">
+        <img src="Images/Big Jim.webp" alt="Big Jim Sun" class="story-image" />
+        <div class="image-caption">BIG JIM SUN</div>
+      </div>
+      <p>
+        A tél Észak-Allansiában mindig kegyetlen és keserves. Gyakran havazik,
+        jeges szél fúj, a fagy csontig hatol. Néhány hete egy Big Jim Sun
+        nevezetű kereskedő azzal fogadott fel, hogy biztosíts védelmet karavánja
+        számára az északi kolóniához vezető hosszú úton. Lóvonta szánjait
+        ruhával, szerszámokkal, fegyverekkel, sózott hússal, fűszerekkel és
+        teával pakolta meg, amit prémekre és mamutagyarból készült
+        csontfaragványokra akar majd elcserélni. Big Jim odafelé sose szokott
+        aggódni, mivel a banditák általában csak visszafelé támadják meg a
+        karavánokat - nem ő az egyetlen, aki felismerte az északi áruk értékét.
+      </p>
+      <p>
+        Hat szán élén haladsz, amikor épp egy befagyott tavon kellene
+        átkelnetek. A távolban a Jégtűhegyek felhőből kibukkanó hósapkás csúcsai
+        merednek az ég felé. A célotok a hegy lába, ahol az északiak a vásárokat
+        szokták tartani. Enyhén havazik. Megállsz, a kardoddal megdőfködöd a
+        jeget, hogy megtudd, vajon kibírja-e a szánok súlyát, amikor hirtelen
+        egy vadászkürt fülsikettítő hangja töri meg a csendet. Felállsz és
+        visszarohansz a karavánhoz, hogy beszélj Big Jimmel.
+      </p>
+      <p>
+        A második szán bakján ül, a hajtó mellett, és hosszú szárú pipát szív.
+        Hatalmas ember, nagy, bozontos szakállal - igazán tiszteletet parancsoló
+        jelenség. Kék szemével a látóhatárt fürkészi, az élet jelei után
+        kutatva. - Úgy hangzik, mintha a kolónia felől jönne - mondja mély
+        hangon. - Jó lenne, ha elmennél és kiderítenéd, mi történt. Lehet, hogy
+        baj van. Aztán siess vissza.
+      </p>
+      <p>
+        Elindulsz a Jégtű-hegy lábánál fekvő kolónia felé. Két óra múltán
+        szörnyű mészárlás színhelyére érsz. A hó piroslik a vértől, a fakunyhók
+        szétzúzva, lerombolva. Hat ember holtan fekszik a hóban, testüket
+        szétszabdalták, csatabárdjaik mellettük hevernek. A lábnyomokból ítélve
+        egy óriási méretű lény támadhatta meg őket. A halványuló napvilágnál
+        elmeséled a kolóniával történt szörnyűségeket.
+      </p>
+      <p>
+        Big Jim körbeállítja a szánokat, hogy éjszakára védelmet nyújtsanak az
+        embereinek. A kör közepén tüzet raktok, Big Jimmel együtt te is mellé
+        telepszel. Mindenki izgatott, még őrt is állíttok. Big Jim halkan
+        megkérdi tőled, hogy hajlandó vagy-e elpusztítani a szörnyű teremtményt,
+        mert máskülönben az ő üzletének örökre vége. Mosolyogva azt válaszolod,
+        hogy megölöd a vadállatot, de csak ha 50 arany üti érte a markodat. Big
+        Jimnek leesik az álla az összeg hallatán, és csak hosszas alkudozások
+        után hajlandó elfogadni követelésedet.
+      </p>
+      <p>
+        A havazás végül eláll; mikor nyugovóra térsz, gondolataid a közelgő
+        vadászat körül forognak.
+      </p>
+      <p>
+        Mikor reggel felébredsz, a tűzből már csak pislákoló parázs maradt. Gyér
+        füst száll fel a hajnali kódben. Egyetlen hang sem töri meg a reggeli
+        csöndet. Odasétálsz az alvó Big Jimhez, és megérinted a vállát. Felriad.
+        Közlöd vele, hogy indulsz, és reméled, még ma visszaérsz. Intesz az
+        őrnek, és az újra eleredő havazásban a kolónia felé veszed az utadat.
+      </p>
+      <a href="1.Fejezet.html">Tovább az 1. Fejezetre</a>
+    </div>
+    <!-- Karakterlap gomb -->
+    <button class="toggle-sheet-btn" onclick="toggleCharacterSheet()">
+      Karakterlap
+    </button>
+
+    <!-- Karakterlap konténer -->
+    <div class="character-sheet" id="characterSheet">
+      <div class="character-sheet-title">Kalandlap</div>
+
+      <div class="stats-container">
+        <div class="stat-item">
+          <label class="stat-label">Ügyesség</label>
+          <input type="number" class="stat-input" id="skill" min="0" max="12" />
+        </div>
+        <div class="stat-item">
+          <label class="stat-label">Életerő</label>
+          <input
+            type="number"
+            class="stat-input"
+            id="stamina"
+            min="0"
+            max="24"
+          />
+        </div>
+        <div class="stat-item">
+          <label class="stat-label">Szerencse</label>
+          <input type="number" class="stat-input" id="luck" min="0" max="12" />
+        </div>
+      </div>
+
+      <div class="equipment-container">
+        <div class="equipment-category">
+          <div class="equipment-title">Felszerelés</div>
+          <div id="equipment-list">
+            <!-- Dinamikusan generált tárgyak -->
+          </div>
+          <div class="add-item">
+            <input
+              type="text"
+              id="new-equipment"
+              placeholder="Új tárgy hozzáadása"
+            />
+            <button onclick="addEquipment()">+</button>
+          </div>
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Arany</div>
+          <input type="number" class="equipment-input" id="gold" min="0" />
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Ékkövek</div>
+          <input type="number" class="equipment-input" id="gems" min="0" />
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Italok</div>
+          <div id="potions-list">
+            <!-- Dinamikusan generált italok -->
+          </div>
+          <div class="add-item">
+            <input
+              type="text"
+              id="new-potion"
+              placeholder="Új ital hozzáadása"
+            />
+            <button onclick="addPotion()">+</button>
+          </div>
+        </div>
+
+        <div class="equipment-category">
+          <div class="equipment-title">Élelmiszer (10)</div>
+          <input
+            type="number"
+            class="equipment-input"
+            id="food"
+            min="0"
+            max="10"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
